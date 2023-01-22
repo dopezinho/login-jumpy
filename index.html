@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jumpy!</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <header>
+
+        <h1>jumpy</h1>
+        <h3>Bem vindo ao Jumpy!</h3>
+
+    </header>
+
+    <section id="sec-form">
+
+        <div id="form">
+
+            <form class="label">
+
+                <label>Nome Completo:</label>
+                <input autocomplete="off" type="text" placeholder="Nome completo" id="name" required>
+
+                <label>Email:</label>
+                <input autocomplete="off" type="email" placeholder="Email@email.com" id="email" required>
+
+                <label>Telefone:</label>
+                <input autocomplete="off" type="tel" placeholder="(00) 00000-0000" id="phone" required>
+
+                <label>CPF:</label>
+                <input type="text" placeholder="000.000.000-00" id="cpf" required name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+
+                <label>Senha:</label>
+                <input autocomplete="off" type="password" placeholder="**** **** ****"  id="password" required>
+            
+                <button type="submit" id="send" onclick="message()">Cadastrar</button>
+
+            </form>
+
+            <footer>
+                <div class="sucesso" id="sucesso">Sucesso!</div>
+                <div class="nfoi" id="nfoi">Campos obrigatórios não registrados.</div>
+            </footer>
+
+        </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

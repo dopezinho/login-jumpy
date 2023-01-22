@@ -1,0 +1,116 @@
+/* CSS RESET  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*  CSSZIN  */
+
+body {
+    background-color: #000000dc;
+    height: 100vh;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: flex-end;
+    margin-bottom: 4vh;
+}
+
+header h1 {
+    font-size: 8vh;
+    text-transform: uppercase;
+}
+
+header h3 {
+    font-size: 6vh;
+}
+
+#sec-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    font-size: 3vh;
+    justify-content: center;
+}
+
+.label {
+    align-items: flex-start;
+    display: flex;
+}
+
+.label input {
+    background-color: #eee;
+    border: none;
+    border-radius: 12px;
+    font-size: 2vh;
+    margin-top: 1vh;
+    outline: none;
+    padding: 1.5vh 10vh 1.5vh 1vh;
+}
+
+.label button {
+    background-color: #eee;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 2vh;
+    padding: 1.5vh 13vh 1.5vh 13vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+input {
+    margin-bottom: 2vh;
+}
+
+footer {
+    color: #fff;
+}
+
+.sucesso {
+    color: #0eb00e;
+    display: none;
+}
+
+.nfoi {
+    color: #ff0000;
+    display: none;
+}
+
+/*  MEDIA KIT  */
+
+@media screen and (max-width: 600px) {
+    header h3 {
+        font-size: 4vh;
+    }
+}
